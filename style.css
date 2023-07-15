@@ -1,0 +1,100 @@
+        * {
+            background: #FCF6F5;
+            font-family: 'Sanchez', serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 900px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-rows: 20% 20% 20% 20% 20%;
+        }
+        
+        .photo {
+            grid-area: 1 / 1 / 3 / 3;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo img {
+            height: 90%;
+            width: 35%;
+            border-radius: 50%;
+            border-left: 10px solid #990011;
+        }
+
+        .heading {
+            grid-area: 1 / 2 / 1 / 6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .summary {
+            grid-area: 2 / 3 / 2 / 6;
+        }
+
+        .expertise {
+            grid-area: 3 / 4 / 4 / 6;
+            margin-left: 20px;
+            text-align: justify;
+        }
+
+        .hobbies {
+            grid-area: 3 / 1 / 3 / 3;
+            margin-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+        }
+
+        .hobbies img {
+            height: 65%;
+            width: 30%;
+            display: block;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
+
+        .hobbies p {
+            width: 600px;
+        }
+
+        .first {
+            float: left;
+        }
+
+        .second {
+            float: left;
+        }
+
+        .contact {
+            grid-area: 3 / 3 / 3 / 3;
+        }
+
+        .projects {
+            grid-area: 5 / 1 / 6 / 6;
+        }
+
+        .projects h3 {
+            text-align: center;
+        }
+
+        .mondrian {
+            height: 150px;
+            width: 150px;
+            grid-area: 5 / 1 / 5 / 1;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
